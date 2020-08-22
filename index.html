@@ -3,37 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./src/main.css" />
+
+    <link rel="stylesheet" type="text/css" href="/src/main.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <title>Gama Academy - Calculadora de churrasco</title>
   </head>
-  <body>
-    <header>
-      <h5>GAMA ACADEMY</h5>
-      <h2>Calculadora de Churrasco</h2>
+  <body class="d-flex flex-column p-2 align-items-center">
+    <header class="d-flex flex-column align-items-center mb-5">
+      <p>GAMA ACADEMY</p>
+      <h1 id="titulo">Calculadora de Churrasco</h1>
     </header>
 
-    <div>
-      <label for="mulheres-qnt">Mulheres</label>
-      <input id="mulheres-qnt" type="text" />
-
-      <label for="homens-qnt">Homens</label>
-      <input id="homens-qnt" type="text" />
-
-      <label for="criancas-qnt">Crianças</label>
-      <input id="criancas-qnt" type="text" />
-      <br>
-      <label for="acompanhamentos">acompanhamentos</label>
-      <input id="acompanhamentos" type="checkbox" />
-    </div>
-    <div>
-      <label for="bebidas-alcoolicas">Bebidas alcoolicas</label>
-      <input id="bebidas-alcoolicas" type="text" />
-
-      <label for="bebidas-nao-alcoolicas">Bebidas não alcoolicas</label>
-      <input id="bebidas-nao-alcoolicas" type="text" />
-    </div>
-    <br>
-    <button id="botaoCalcular">Calcular</button>
+    <form>
+      <div id="comidas" class="d-lg-flex">
+        <h2 class="titulo-form m-3 pr-lg-4">Comidas</h2>
+        <div class="form-group m-3 d-flex flex-column-reverse align-items-center">
+          <label for="mulheres-qnt">Mulheres</label>
+          <input type="number" class="form-control" id="mulheres-qnt">
+        </div>
+        <div class="form-group m-3 d-flex flex-column-reverse align-items-center">
+          <label for="homens-qnt">Homens</label>
+          <input type="number" class="form-control" id="homens-qnt">
+        </div>
+        <div class="form-group m-3 d-flex flex-column-reverse align-items-center">
+          <label for="criancas-qnt">Crianças</label>
+          <input type="number" class="form-control" id="criancas-qnt">
+        </div>
+      </div>
+      <div id="ac" class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="acompanhamentos">
+        <label class="form-check-label" for="acompanhamentos">Acompanhamentos?</label>
+      </div>
+      <div id="bebidas" class="d-lg-flex mt-5">
+        <h2 class="titulo-form m-3 pr-lg-4">Bebidas</h2>
+        <div class="form-group m-3 d-flex flex-column-reverse align-items-center">
+          <label for="bebidas-alcoolicas">Quantes bebem cerveja?</label>
+          <input type="number" class="form-control" id="bebidas-alcoolicas">
+        </div>
+        <div class="form-group m-3 d-flex flex-column-reverse align-items-center">
+          <label for="bebidas-nao-alcoolicas">Quantes bebem refrigerante?</label>
+          <input type="number" class="form-control" id="bebidas-nao-alcoolicas">
+        </div>
+      </div>
+      <button id="botaoCalcular">Calcular</button>
+    </form>
 
       <div>
         <div>

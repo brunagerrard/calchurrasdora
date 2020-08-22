@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&display=swap');
+
+body {
+  background-color: #731AB7 !important;
+  color: #F7F0F0 !important;
+  font-family: "Lato", "sans-serif" !important;
+}
+
+header p {
+  font-size: 26px;
+}
+
+h1, h2 {
+  font-family: "Lobster";
+}
+
+#titulo {
+  font-size: 86px;
+}
+
+.titulo-form {
+  font-size: 40px;
+}
+
+label {
+  font-size: 15px;
+}
+
+#mulheres-qnt,
+#homens-qnt,
+#criancas-qnt,
+#bebidas-alcoolicas,
+#bebidas-nao-alcoolicas {
+  width: 170px;
+  height: 70px;
+  border: 5px solid #F7F7F7;
+  border-radius: 0;
+  background-color: transparent;
+  margin-bottom: 8px;
+}
+
+#ac {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+#botaoCalcular {
+  display: block;
+  margin: 2rem auto;
+  width: 314px;
+  height: 77px;
+  background: #63DC3E;
+  box-shadow: 0px 3px 6px #F8F0F029;
+  border-radius: 5px;
+  border: none;
+  font: normal normal bold 30px 'Lato';
+  color: #731AB7;
+}
+
+@media (max-width: 768px) {
+  #titulo {
+    font-size: 50px;
+    text-align: center;
+  }
+}
