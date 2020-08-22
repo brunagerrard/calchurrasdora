@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&display=swap');
 
 body {
-  background-color: #731AB7 !important;
-  color: #F7F0F0 !important;
-  font-family: "Lato", "sans-serif" !important;
+  background-color: #731AB7;
+  color: #F7F0F0;
+  font-family: "Lato", "sans-serif";
 }
 
 header p {
